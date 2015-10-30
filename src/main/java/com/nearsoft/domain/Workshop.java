@@ -36,8 +36,8 @@ public class Workshop {
             throw new WorkshopGroupIsFullException();
         }
 
-
     }
+
 
     public String getTitle() {
         return title;
