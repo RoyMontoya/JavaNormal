@@ -1,6 +1,7 @@
 package com.nearsoft.controllers;
 
 import com.nearsoft.domain.Workshop;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,15 +13,13 @@ import java.util.List;
 /**
  * Created by roy on 30/10/15.
  */
+@Controller
 public class WorkShopController {
     @RequestMapping("/workshops")
     public String list(Model model){
-
         List<Workshop> workshops = getWorkshops();
-
         model.addAttribute("workshops", workshops);
         return "workshops";
-
     }
 
     private List<Workshop> getWorkshops() {

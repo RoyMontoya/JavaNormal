@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
+<html>
+<head lang="en">
     <title></title>
 </head>
 <body>
-
-<h2>Workshops de Roy</h2>
-<ul th:each="workshop : ${workshop}">
-    <li th:text="${workshop.title}"> tittle here</li>
+<h2>Workshops</h2>
+<ul th:each="workshop: ${workshops}">
+    <li th:text="${workshop.title}"> title here </li>
 </ul>
-
-
 </body>
 </html>

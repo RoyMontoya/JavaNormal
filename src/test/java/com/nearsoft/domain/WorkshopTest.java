@@ -19,7 +19,6 @@ public class WorkshopTest {
 
     @Test(expected = WorkshopGroupIsFullException.class)
     public void workshopCanNotHaveMoreThanMaxStudents() throws Exception{
-
         Workshop java = new Workshop("Java super advanced", 1,1, new Date());
         java.enroll(new Student("John", "Doe", "foo@doe.com"));
         java.enroll(new Student("Lisa", "Unlucky", "luck@unlucky.com"));

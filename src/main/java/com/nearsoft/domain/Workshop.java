@@ -18,7 +18,7 @@ public class Workshop {
             this.title = title;
             this.maxGroupSize = maxGroupSize;
             this.minGroupSize = minGroupSize;
-
+            this.startDate = startDate;
     }
 
     public boolean canBeOpened(){
